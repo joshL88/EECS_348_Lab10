@@ -13,7 +13,7 @@ bool validDouble(string num){
         if (!isdigit(c)){
             if (c == '.' && !hasDecimal){
 
-                if (i == (num.length() - 1)){
+                if (i == (num.length() - 1) || i == 0 || !isdigit(num[i-1])){
                     return false;
                 }
                 hasDecimal = true; 
