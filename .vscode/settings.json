@@ -5,6 +5,12 @@
         "iostream": "cpp",
         "string": "cpp",
         "istream": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "deque": "cpp",
+        "vector": "cpp",
+        "random": "cpp",
+        "limits": "cpp",
+        "algorithm": "cpp"
     }
 }
