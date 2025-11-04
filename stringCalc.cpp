@@ -93,7 +93,7 @@ string addNums(string num1, string num2){
         num1 += '0';
     }
     
-    if (num1 == num2){
+    if (num1 == num2 && sign1!=sign2){
         return "0";
     }
     else if(num2 > num1){
