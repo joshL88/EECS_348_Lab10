@@ -115,13 +115,12 @@ string addNums(string num1, string num2){
                 }
             }
             else{
-                char sum = (d1 - d2 - carry_out + '0');
+                char digit = (d1 - d2 - carry_out + '0' +'0');
                 carry_out = '0';
-                while (sum < 0){
-                    sum+=10;
+                while (digit < '0'){
+                    digit+=10;
                     carry_out += 1;
                 }
-                char digit = (sum) % 10 + '0';
                 result.insert(0, 1, digit);
             }
         } 
@@ -135,9 +134,8 @@ string addNums(string num1, string num2){
                 }
             }
             else{
-                char sum = (d1 + d2 + carry_out - 3*'0');
-                char digit = (sum) % 10 + '0';
-                carry_out = (sum)/10 + '0';
+                char digit = (d1 + d2 + carry_out - 3*'0') % 10 + '0';
+                carry_out = (d1 + d2 + carry_out - 3*'0')/10 + '0';
                 result.insert(0, 1, digit);
             }
         }
